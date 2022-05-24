@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="List of micro projects">
+
+        <title>Micro projects</title>
+
+        <style>
+            button {
+                display: block;
+            }
+        </style>
+
+        <script>
+            function btnClick(project) {
+                window.location.href += project;
+            }
+        </script>
+    </head>
+    
+    <body>
+        <button onclick="btnClick('QuoteGenerator')">1. Quote Generator</button>
+        <button onclick="btnClick('InfinityScroll')">2. Infinity Scroll</button>
+    </body>
+</html>
