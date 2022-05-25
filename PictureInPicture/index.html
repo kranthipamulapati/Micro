@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Picture in Picture">
+
+        <title>PIP</title>
+
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+
+    <body onload="onLoad()">
+
+        <!-- video -->
+        <video id="video" controls height="360" width="640"></video>
+
+        <!-- play button -->
+        <button id="playButton" onclick="play()">Start</button>
+        <button id="pipButton"  onclick="PIP()">PIP</button>
+
+        <!-- loader -->
+        <div id="loader"></div>
+
+        <!-- scripts -->
+        <script type="text/javascript" src="js/app.js" defer></script>
+    </body>
+</html>
