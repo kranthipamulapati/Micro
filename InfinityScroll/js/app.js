@@ -18,7 +18,7 @@ let ready = false;
 let totalImages = 0;
 let loadedImages = 0;
 
-const apiURL = "https://api.unsplash.com/photos/random/?client_id=YOUR_ACCESS_KEY&count=10";
+const apiURL = "https://api.unsplash.com/photos/random/?client_id=oSZ3M62BzO98xpWACtnFFzh_-MesD7hInqCmAcwabkk&count=10";
 
 // Get 10 Photos
 
