@@ -26,7 +26,7 @@ async function getPhotos() {
 
     try {
         
-        const response = await fetch(apiURL);
+        let response = await fetch(apiURL);
         response = await response.json();
         showPhotos(response);
 
