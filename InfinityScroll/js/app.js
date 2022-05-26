@@ -47,7 +47,7 @@ function showPhotos(photos) {
         let img = document.createElement("img");
         img.setAttribute("src", photo.urls.regular);
         img.setAttribute("alt", photo.alt_description);
-        img.addEventlistener("load", imageLoaded);
+        img.addEventListener("load", imageLoaded);
         imageContainer.appendChild(img);
 
     });
@@ -61,7 +61,6 @@ function imageLoaded() {
 window.addEventListener("scroll", function() {
     if(window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 && ready) {
         
-        console.log("bottom!");
         ready = false;
         getPhotos();
     }
