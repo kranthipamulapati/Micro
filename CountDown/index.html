@@ -17,7 +17,7 @@
     <body onload="onLoad()">
         <div id="loader"></div>
 
-        <div class="container">
+        <div id="container" class="container">
             
             <div id="countDown-input-container">
                 <h1 class="countDown-container-title">Create a Custom CountDown!</h1>
@@ -25,10 +25,10 @@
                 <form class="countDown-container-body" id="countDownForm">
 
                     <label for="title">Title</label>
-                    <input type="text" id="countDown-reason" placeholder="What are you counting down to?">
+                    <input type="text" id="countDown-reason" placeholder="What are you counting down to?" required>
 
                     <label for="date-picker">Select a Date</label>
-                    <input type="date" id="countDown-date">
+                    <input type="date" id="countDown-date" required>
 
                     <button type="submit">Submit</button>
                 </form>
@@ -38,14 +38,14 @@
                 <h1 class="countDown-container-title" id="countDown-timer-title">Count Down</h1>
 
                 <ul class="countDown-container-body" id="countDownTimer">
-                    <li><span>3</span><span>Days</span></li>
-                    <li><span>4</span><span>Hours</span></li>
-                    <li><span>5</span><span>Minutes</span></li>
-                    <li><span>6</span><span>Seconds</span></li>
+                    <li><span id="days">0</span><span>Days</span></li>
+                    <li><span id="hours">0</span><span>Hours</span></li>
+                    <li><span id="minutes">0</span><span>Minutes</span></li>
+                    <li><span id="seconds">0</span><span>Seconds</span></li>
                 </ul>
 
                 <div style="display: flex; justify-content: center;">
-                    <button type="reset">Reset</button>
+                    <button id="resetBtn" type="button">Reset</button>
                 </div>
                 
             </div>
@@ -54,8 +54,8 @@
                 <h1 class="countDown-container-title" id="countDown-info-title">CountDown Complete!</h1>
                 
                 <div class="countDown-container-body" id="countDownInfo">
-                    <h1 id="complete-info">CountDown finished on 03-06-2020</h1>
-                    <button type="button">New CountDown</button>
+                    <h1 id="complete-info"></h1>
+                    <button id="newCountDownBtn" type="button">New CountDown</button>
                 </div>
             </div>
 
