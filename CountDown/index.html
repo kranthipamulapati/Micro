@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="CountDown">
+
+        <title>CountDown</title>
+
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+        <script type="text/javascript" src="js/app.js" defer></script>
+    </head>
+
+    <body onload="onLoad()">
+        <div id="loader"></div>
+
+        <div class="container">
+            
+            <div id="countDown-input-container">
+                <h1 class="countDown-container-title">Create a Custom CountDown!</h1>
+
+                <form class="countDown-container-body" id="countDownForm">
+
+                    <label for="title">Title</label>
+                    <input type="text" id="countDown-reason" placeholder="What are you counting down to?">
+
+                    <label for="date-picker">Select a Date</label>
+                    <input type="date" id="countDown-date">
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div id="countDown-timer-container" hidden>
+                <h1 class="countDown-container-title" id="countDown-timer-title">Count Down</h1>
+
+                <ul class="countDown-container-body" id="countDownTimer">
+                    <li><span>3</span><span>Days</span></li>
+                    <li><span>4</span><span>Hours</span></li>
+                    <li><span>5</span><span>Minutes</span></li>
+                    <li><span>6</span><span>Seconds</span></li>
+                </ul>
+
+                <div style="display: flex; justify-content: center;">
+                    <button type="reset">Reset</button>
+                </div>
+                
+            </div>
+
+            <div id="countDown-info-container" hidden>
+                <h1 class="countDown-container-title" id="countDown-info-title">CountDown Complete!</h1>
+                
+                <div class="countDown-container-body" id="countDownInfo">
+                    <h1 id="complete-info">CountDown finished on 03-06-2020</h1>
+                    <button type="button">New CountDown</button>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
