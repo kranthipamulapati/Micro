@@ -9,24 +9,42 @@
         <title>Micro projects</title>
 
         <style>
+            body {
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+
             button {
-                display: block;
+                cursor: pointer;
+                color: white;
+                width: 20%;
+                padding: 1rem;
+                margin: 0.5rem 0;
+                font-size: 16px;
+                border-radius: 5px;
+                border: 1px solid grey;
+                background: brown;
+                box-shadow: 2.5px 2.5px 5px 5px lightgrey;
             }
         </style>
 
         <script>
             function btnClick(project) {
-                window.location.href += project;
+                window.open(window.location.href + project);
             }
         </script>
     </head>
     
     <body>
-        <button onclick="btnClick('TellMeAJoke')">1. Tell me a Joke</button>
-        <button onclick="btnClick('InfinityScroll')">2. Infinity Scroll</button>
-        <button onclick="btnClick('PictureInPicture')">3. Picture in Picture</button>
-        <button onclick="btnClick('CountDown')">4. Count Down</button>
-        <button onclick="btnClick('Calculator')">5. Calculator</button>
-        <button onclick="btnClick('DragNDrop')">6. Drag N Drop</button>
+        <h1>Micro Projects</h1>
+        <button onclick="btnClick('CountDown')">1. Count Down</button>
+        <button onclick="btnClick('DragNDrop')">2. Drag N Drop</button>
+        <button onclick="btnClick('Calculator')">3. Calculator</button>
+        <button onclick="btnClick('TellMeAJoke')">4. Tell me a Joke</button>
+        <button onclick="btnClick('InfinityScroll')">5. Infinity Scroll</button>
+        <button onclick="btnClick('PictureInPicture')">6. Picture in Picture</button>
     </body>
 </html>
