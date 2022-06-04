@@ -24,7 +24,7 @@ ul {
     padding: 0;
 }
 
-.backlog-column {
+.toDo-column {
     background-color: var(--column-1) !important;
 }
 
@@ -88,6 +88,7 @@ ul {
     flex-direction: column;
     align-items: center;
     list-style-type: none;
+    min-height: 30vh;
 }
 
 .drag-item {
@@ -98,6 +99,7 @@ ul {
     margin: 5px 0;
     padding: 1rem 0;
     border-radius: 5px;
+    
 }
 
 .custom-scroll {
@@ -105,4 +107,3 @@ ul {
     overflow-y: auto;
     max-height: 52vh;
 }
-

@@ -17,23 +17,19 @@
     <body onload="onLoad()">
         <div id="loader"></div>
 
-        <h1 class="main-title">Job Board</h1>
+        <h1 class="main-title">Job Board</h1>    
 
         <div class="drag-container">
 
             <ul class="drag-list">
-                <li class="drag-column backlog-column">
+                <li class="drag-column toDo-column">
 
                     <span class="header">
-                        <h1>Backlog</h1>
+                        <h1>To Do</h1>
                     </span>
 
-                    <div id="backlog-content" class="custom-scroll">
-                        <ul class="drag-item-list" id="backlog-list">
-                            <li class="drag-item">Testing</li>
-                            <li class="drag-item">Testing</li>
-                            <li class="drag-item">Testing</li>
-                        </ul>
+                    <div id="toDo-content" class="custom-scroll">
+                        <ul class="drag-item-list" id="toDo-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(event)"></ul>
                     </div>
 
                 </li>
@@ -45,11 +41,7 @@
                     </span>
 
                     <div id="progress-content" class="custom-scroll">
-                        <ul class="drag-item-list" id="progress-list">
-                            <li class="drag-item">Testing</li>
-                            <li class="drag-item">Testing</li>
-                            <li class="drag-item">Testing</li>
-                        </ul>
+                        <ul class="drag-item-list" id="progress-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(event)"></ul>
                     </div>
 
                 </li>
@@ -61,11 +53,7 @@
                     </span>
 
                     <div id="complete-content" class="custom-scroll">
-                        <ul class="drag-item-list" id="complete-list">
-                            <li class="drag-item">Testing</li>
-                            <li class="drag-item">Testing</li>
-                            <li class="drag-item">Testing</li>
-                        </ul>
+                        <ul class="drag-item-list" id="complete-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(event)"></ul>
                     </div>
 
                 </li>
@@ -77,11 +65,7 @@
                     </span>
 
                     <div id="on-hold-content" class="custom-scroll">
-                        <ul class="drag-item-list" id="on-hold-list">
-                            <li class="drag-item">Testing</li>
-                            <li class="drag-item">Testing</li>
-                            <li class="drag-item">Testing</li>
-                        </ul>
+                        <ul class="drag-item-list" id="on-hold-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(event)"></ul>
                     </div>
 
                 </li>
