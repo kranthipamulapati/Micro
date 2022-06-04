@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Drag N Drop">
+
+        <title>Drag N Drop</title>
+
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+        <script type="text/javascript" src="js/app.js" defer></script>
+    </head>
+
+    <body onload="onLoad()">
+        <div id="loader"></div>
+
+        <h1 class="main-title">Job Board</h1>
+
+        <div class="drag-container">
+
+            <ul class="drag-list">
+                <li class="drag-column backlog-column">
+
+                    <span class="header">
+                        <h1>Backlog</h1>
+                    </span>
+
+                    <div id="backlog-content" class="custom-scroll">
+                        <ul class="drag-item-list" id="backlog-list">
+                            <li class="drag-item">Testing</li>
+                            <li class="drag-item">Testing</li>
+                            <li class="drag-item">Testing</li>
+                        </ul>
+                    </div>
+
+                </li>
+
+                <li class="drag-column progress-column">
+
+                    <span class="header">
+                        <h1>Progress</h1>
+                    </span>
+
+                    <div id="progress-content" class="custom-scroll">
+                        <ul class="drag-item-list" id="progress-list">
+                            <li class="drag-item">Testing</li>
+                            <li class="drag-item">Testing</li>
+                            <li class="drag-item">Testing</li>
+                        </ul>
+                    </div>
+
+                </li>
+
+                <li class="drag-column complete-column">
+
+                    <span class="header">
+                        <h1>Complete</h1>
+                    </span>
+
+                    <div id="complete-content" class="custom-scroll">
+                        <ul class="drag-item-list" id="complete-list">
+                            <li class="drag-item">Testing</li>
+                            <li class="drag-item">Testing</li>
+                            <li class="drag-item">Testing</li>
+                        </ul>
+                    </div>
+
+                </li>
+
+                <li class="drag-column on-hold-column">
+
+                    <span class="header">
+                        <h1>On-hold</h1>
+                    </span>
+
+                    <div id="on-hold-content" class="custom-scroll">
+                        <ul class="drag-item-list" id="on-hold-list">
+                            <li class="drag-item">Testing</li>
+                            <li class="drag-item">Testing</li>
+                            <li class="drag-item">Testing</li>
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+
+        </div>
+
+    </body>
+</html>

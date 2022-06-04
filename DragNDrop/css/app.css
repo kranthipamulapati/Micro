@@ -1,0 +1,108 @@
+/* Defaults */
+
+html {
+    box-sizing : border-box;
+}
+
+body {
+    margin : 0;
+}
+
+button {
+    cursor : pointer;
+}
+
+:root {
+    --column-1 : #a2622d;
+    --column-2 : #1b6161;
+    --column-3 : #248224;
+    --column-4 : #a22d22;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.backlog-column {
+    background-color: var(--column-1) !important;
+}
+
+.progress-column {
+    background-color: var(--column-2) !important;
+}
+
+.complete-column {
+    background-color: var(--column-3) !important;
+}
+
+.on-hold-column {
+    background-color: var(--column-4) !important;
+}
+
+/* Loader */
+
+#loader {
+    top : auto;
+    left : auto;
+    z-index : 99;
+    position : fixed;
+    width : 2.5rem;
+    height : 2.5rem;
+    border-radius : 50%;
+    border : 16px solid #f3f3f3;
+    border-top : 16px solid #3498db;
+    animation : spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.drag-list {
+    display: flex;
+    flex-direction: c;
+    list-style-type: none;
+}
+
+.drag-column {
+    flex: 1;
+    margin: 0 10px;
+    position: relative;
+    overflow-x: hidden;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.header {
+    color: white;   
+}
+
+.drag-item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+.drag-item {
+    background: black;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin: 5px 0;
+    padding: 1rem 0;
+    border-radius: 5px;
+}
+
+.custom-scroll {
+    width: 80%;
+    overflow-y: auto;
+    max-height: 52vh;
+}
+
